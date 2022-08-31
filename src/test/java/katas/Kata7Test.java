@@ -1,8 +1,10 @@
 package katas;
 
-import org.junit.Assert;
-import org.junit.Test;
 
+import org.assertj.core.api.Assert;
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.AssertionsForClassTypes.fail;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 
@@ -10,6 +12,7 @@ public class Kata7Test {
 
     @Test
     public void testExecute() {
-        Assert.assertThat(Kata7.execute(), equalTo(4));
+        var result = Kata1.execute();
+        fail("not implemented");
     }
 }
